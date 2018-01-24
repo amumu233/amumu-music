@@ -1,0 +1,112 @@
+.play-list-bg
+  position: fixed
+  top 0
+  left 0
+  z-index: 1002
+  width 100%
+  height 100%
+  background-color: rgba(0,0,0,0.3)
+  transform: translate3d(0,0,0)
+  &.fade-enter
+    .play-list-wrap
+      transform: translate3d(0,100%,0)
+  &.fade-enter-active
+    .play-list-wrap
+      transition: transfrom .3s
+      transform: translate3d(0,0,0)
+  &.fade-exit
+    .play-list-wrap
+      transform: translate3d(0,0,0)
+  &.fade-exit-active
+    .play-list-wrap
+      transition: all .3s
+      transform: translate3d(0,100%,0)
+  .play-list-wrap
+    position: absolute
+    left 0
+    bottom 0
+    width 100%
+    background-color: #2c2c2c
+    font-size 16px
+    color: #ffffff
+    transform: translate3d(0,0,0)
+    .play-list-head
+      position: relative
+      height 40px
+      line-height 40px
+      &:after
+        content: ""
+        position: absolute
+        left 0
+        bottom 0
+        width 100%
+        height 1px
+        background-color: #cccccc
+        transform: scaleY(0.5)
+      .head-title, .close
+        font-weight 400
+      .head-title
+        float left
+        margin-left 12px
+      .close
+        float: right
+        margin-right 20px
+    .play-list
+      height 250px
+      .play-list-item
+        .item-left
+          float left
+          width 50px
+          height 50px
+          line-height 50px
+          text-align: center
+        .item-right
+          position: relative
+          height 50px
+          margin-left 50px
+          padding-top 2px
+          &:after
+            position: absolute
+            content: ""
+            bottom 0
+            width 100%
+            height 1px
+            background-color: #cccccc
+            transform: scaleY(0.5)
+          .song
+            padding-top 5px
+            line-height 18px
+            margin-right 50px
+            .song-name, .song-singer
+              display: block
+              overflow: hidden
+              text-overflow: ellipsis
+              white-space: nowrap
+            .song-singer
+              color: rgba(221,221,221,0.7)
+              font-size 14px
+            &.current
+              .song-name, .song-singer
+                color: #fff68f
+          .delete
+            position: absolute
+            top 16px
+            right 30px
+            font-size 14px
+        &:last-child
+          .item-right:after
+            height: 0
+
+
+.fade-enter
+  opacity: 0
+  &.fade-enter-active
+    opacity: 1
+    transition: opacity .5s
+
+.fade-exit
+  opacity: 1
+  &.fade-exit-active
+    opacity: 0
+    transition opacity  .5s
+        
