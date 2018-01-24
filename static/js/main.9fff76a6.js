@@ -57,7 +57,7 @@
 /******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
 /******/
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "/";
+/******/ 	__webpack_require__.p = "/amumu-music/";
 /******/
 /******/ 	// Load entry module and return exports
 /******/ 	return __webpack_require__(__webpack_require__.s = 65);
@@ -22039,7 +22039,7 @@ function load() {
 
   // If debug isn't set in LS, and we're in Electron, try to load $DEBUG
   if (!r && typeof process !== 'undefined' && 'env' in process) {
-    r = Object({"NODE_ENV":"production","PUBLIC_URL":""}).DEBUG;
+    r = Object({"NODE_ENV":"production","PUBLIC_URL":"/amumu-music"}).DEBUG;
   }
 
   return r;
@@ -22724,10 +22724,10 @@ function getHotKey(){var data=Object.assign({},__WEBPACK_IMPORTED_MODULE_1__conf
 var isLocalhost=Boolean(window.location.hostname==='localhost'||// [::1] is the IPv6 localhost address.
 window.location.hostname==='[::1]'||// 127.0.0.1/8 is considered localhost for IPv4.
 window.location.hostname.match(/^127(?:\.(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)){3}$/));function register(){if("production"==='production'&&'serviceWorker'in navigator){// The URL constructor is available in all browsers that support SW.
-var publicUrl=new URL("",window.location);if(publicUrl.origin!==window.location.origin){// Our service worker won't work if PUBLIC_URL is on a different origin
+var publicUrl=new URL("/amumu-music",window.location);if(publicUrl.origin!==window.location.origin){// Our service worker won't work if PUBLIC_URL is on a different origin
 // from what our page is served on. This might happen if a CDN is used to
 // serve assets; see https://github.com/facebookincubator/create-react-app/issues/2374
-return;}window.addEventListener('load',function(){var swUrl=""+'/service-worker.js';if(isLocalhost){// This is running on localhost. Lets check if a service worker still exists or not.
+return;}window.addEventListener('load',function(){var swUrl="/amumu-music"+'/service-worker.js';if(isLocalhost){// This is running on localhost. Lets check if a service worker still exists or not.
 checkValidServiceWorker(swUrl);// Add some additional logging to localhost, pointing developers to the
 // service worker/PWA documentation.
 navigator.serviceWorker.ready.then(function(){console.log('This web app is being served cache-first by a service '+'worker. To learn more, visit https://goo.gl/SC7cgQ');});}else{// Is not local host. Just register service worker
@@ -22746,4 +22746,4 @@ registerValidSW(swUrl);}}).catch(function(){console.log('No internet connection 
 
 /***/ })
 /******/ ]);
-//# sourceMappingURL=main.cbb9fd64.js.map
+//# sourceMappingURL=main.9fff76a6.js.map
