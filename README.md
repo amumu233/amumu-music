@@ -6,7 +6,7 @@
 
 在线预览: [amumu233.github.io/amumu-music](https://amumu233.github.io/amumu-music)
 
-二维码: ![手机浏览二维码](https://amumu233.github.io/amumu-music/screenshot/erweima.png)
+二维码: ![手机浏览二维码](https://amumu233.github.io/amumu-music/screenshot/weweima.png)
 
 ## npm start
 
